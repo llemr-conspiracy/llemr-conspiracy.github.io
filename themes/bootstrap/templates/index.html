@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="bg-primary text-white">
+    <div class="container px-5, py-5">
+      <div class="row d-flex align-items-center">
+        <div class="column col-sm-4">
+          <div class="align-self-center">
+            <h1><strong><u>L</u>LEMR</strong></h1>
+            <h2>is a <u>L</u>ightweight <u>EMR</u>.</h2>
+            <p class="lead">
+              it's free, it's open source, and it's designed for free clinics
+            </p>
+          </div>
+        </div>
+        <div class="column col-sm-8">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/active-patients.png"
+               class="img-fluid float rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div style="text-align: center;" class="row">
+      <div class="column col-md-4 px-5 py-5">
+        <div style="padding-bottom: 3em;">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/bootstrap-icons-1.5.0/lightbulb.svg"
+             width="128" height="128">
+        </div>
+        <h3>Focused</h3>
+        <p>LLEMR avoids the bloat of commercial alternatives by focusing. LLEMR is so intuitive that new users don't usually need training.</p>
+      </div>
+      <div class="column col-md-4 px-5 py-5">
+        <div style="padding-bottom: 3em;">
+          <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/bootstrap-icons-1.5.0/journal-code.svg"
+               width="128" height="128">
+        </div>
+        <h3>Open Source</h3>
+        <p>LLEMR is open source software, which means it's usually less expensive than commercial alternatives and, more importantly, it puts the power in your hands.</p>
+      </div>
+      <div class="column col-md-4 px-5 py-5">
+        <div style="padding-bottom: 3em;">
+        <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/bootstrap-icons-1.5.0/tools.svg"
+             width="128" height="128">
+        </div>
+        <h3>Feature-rich</h3>
+        <p>LLEMR is a collaboration of multiple clinics using many workflows. We probably already have whatever features you need.</p>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
