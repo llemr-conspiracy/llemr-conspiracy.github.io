@@ -24,7 +24,7 @@ MENUITEMS = [
     ('Demo', DEMO_URL),
     ('Docs', DOCS_URL),
     ('Source', GITHUB_PROJECT_URL),
-    ('About','/about/'),
+    ('About','/authors'),
     ('Contact','/contact/'),
 ]
 
