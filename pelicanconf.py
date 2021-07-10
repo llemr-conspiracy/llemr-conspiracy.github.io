@@ -13,6 +13,8 @@ DEFAULT_LANG = 'en'
 
 THEME = 'themes/bootstrap'
 
+STATIC_PATHS = ['images']
+
 GITHUB_ORG_URL = 'https://github.com/oslerproject'
 GITHUB_PROJECT_URL = GITHUB_ORG_URL+'/llemr'
 DOCS_URL = 'https://llemr.readthedocs.io/'
