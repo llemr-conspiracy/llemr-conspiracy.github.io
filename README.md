@@ -34,6 +34,6 @@ Use pelican to build the html pages locally, then use `ghp-import` to move the h
 
 ```bash
 $ pelican content -o output -s pelicanconf.py
-$ ghp-import output -b gh-pages
+$ ghp-import output -b gh-pages --cname=llemrconspiracy.org
 $ git push origin gh-pages
 ```
