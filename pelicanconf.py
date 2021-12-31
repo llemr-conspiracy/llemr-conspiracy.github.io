@@ -27,7 +27,6 @@ MENUITEMS = [
     ('Docs', DOCS_URL),
     ('Source', GITHUB_PROJECT_URL),
     ('About','/authors'),
-    ('Contact','/contact/'),
 ]
 
 # move all the articles to a subfolder called 'blog'

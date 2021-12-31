@@ -61,7 +61,7 @@
 
             {% if DISPLAY_PAGES_ON_MENU -%}
               {% for pg in pages %}
-                  <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
               {% endfor %}
             {% endif %}
           </ul>
