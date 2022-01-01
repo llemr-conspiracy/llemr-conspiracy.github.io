@@ -47,16 +47,22 @@
   <header class="header header-sticky header-transparent">
     <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navToggler" aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                aria-controls="navToggler"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                data-bs-target="#navbarToggleBlock"
+                aria-controls="navbarToggleBlock"
+        >
         <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" >{{ SITENAME }}</a>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarToggleBlock">
+          <a class="navbar-brand" >{{ SITENAME }}</a>
           <ul class="navbar-nav mr-auto">
             {% for title, link in MENUITEMS.left %}
                 <li class="nav-item"><a class="nav-link" href="{{ link }}">{{ title }}</a></li>
             {% endfor %}
-
             {% if DISPLAY_PAGES_ON_MENU -%}
               {% for pg in pages %}
                 <li class="nav-item"><a class="nav-link" href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
@@ -69,7 +75,6 @@
             {% for title, link in MENUITEMS.right %}
               <li class="nav-item"><a class="nav-link" href="{{ link }}">{{ title }}</a></li>
             {% endfor %}
-
           </ul>
         </div>
     </nav>
