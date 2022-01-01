@@ -3,7 +3,7 @@
 
 AUTHOR = 'The LLEMR Conspiracy'
 SITENAME = 'The LLEMR Conspiracy'
-SITEURL = ''
+SITEURL = 'https://llemrconspiracy.org'
 
 PATH = 'content'
 
@@ -20,14 +20,18 @@ GITHUB_PROJECT_URL = GITHUB_ORG_URL+'/llemr'
 DOCS_URL = 'https://llemr.readthedocs.io/'
 DEMO_URL = 'https://oslerdemo.herokuapp.com'
 
-MENUITEMS = [
-    ('Home', '/'),
-    ('Blog', '/blog/'),
-    ('Demo', DEMO_URL),
-    ('Docs', DOCS_URL),
-    ('Source', GITHUB_PROJECT_URL),
-    ('About','/authors'),
-]
+MENUITEMS = {
+    'left': [
+        ('Home', '/'),
+        ('Blog', '/blog/'),
+        ('About','/authors'),
+    ],
+    'right' : [
+        ('Demo', DEMO_URL),
+        ('Docs', DOCS_URL),
+        ('Source', GITHUB_PROJECT_URL),
+    ]
+}
 
 # move all the articles to a subfolder called 'blog'
 ARTICLE_URL = 'blog/{slug}/'

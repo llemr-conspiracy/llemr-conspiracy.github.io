@@ -53,7 +53,7 @@
         <a class="navbar-brand" >{{ SITENAME }}</a>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
-            {% for title, link in MENUITEMS %}
+            {% for title, link in MENUITEMS.left %}
                 <li class="nav-item"><a class="nav-link" href="{{ link }}">{{ title }}</a></li>
             {% endfor %}
 
@@ -64,7 +64,14 @@
             {% endif %}
           </ul>
         </div>
-      </div>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav mr-auto">
+            {% for title, link in MENUITEMS.right %}
+              <li class="nav-item"><a class="nav-link" href="{{ link }}">{{ title }}</a></li>
+            {% endfor %}
+
+          </ul>
+        </div>
     </nav>
   </header>
 
