@@ -38,25 +38,29 @@
   <header class="header header-sticky header-transparent">
     <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navToggler" aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                aria-controls="navToggler"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                data-bs-target="#navToggleLeft,#navToggleRight"
+                aria-controls="navToggleLeft"
+        ><span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" >The LLEMR Conspiracy</a>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navToggleLeft">
+          <a class="navbar-brand" >The LLEMR Conspiracy</a>
           <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="/authors">About</a></li>
-
                 <li class="nav-item"><a class="nav-link" href="https://llemrconspiracy.org/pages/contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="collapse navbar-collapse justify-content-end">
+        <div class="collapse navbar-collapse justify-content-end" id="navToggleRight">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item"><a class="nav-link" href="https://oslerdemo.herokuapp.com">Demo</a></li>
               <li class="nav-item"><a class="nav-link" href="https://llemr.readthedocs.io/">Docs</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://github.com/oslerproject/llemr">Source</a></li>
-
+              <li class="nav-item"><a class="nav-link" href="https://github.com/oslerproject/llemr">Src</a></li>
           </ul>
         </div>
     </nav>
