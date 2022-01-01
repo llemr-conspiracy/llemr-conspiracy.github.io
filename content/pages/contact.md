@@ -1,12 +1,16 @@
 Title: Contact
 
+We're friendly and love to hear from folks who are considering or already using LLEMR.
+
 ### If you have found a security-impacting issue
 
-Please **do not** file a pull request or otherwise post publically. Instead, email `security@llemrconsiracy.org`.
+Please **do not** file a pull request or otherwise post publically. Instead, email <security@llemrconsiracy.org>. Our PGP public key can be found [here]({static}/keys/publickey.security@llemrconspiracy.asc).
+
+This is important because we want to avoid public disclosure of any vulnerabilities until after they are patched.
 
 ### If you'd implement LLEMR at your free clinic
 
-Get it touch! Email us at `contact@llemrconsiracy.org`.
+Get it touch at <contact@llemrconsiracy.org>!
 
 ### If you'd like to contribute to development
 
@@ -14,4 +18,4 @@ You can always file a pull request or issue at [our github](https://github.com/l
 
 ### If you'd like to talk about something else
 
-We accept help with all kinds of things, from writing new blog posts to making this website prettier! Reach out at `contact@llemrconspiracy.org`
+We accept help with all kinds of things, from writing new blog posts to making this website prettier! Reach out at <contact@llemrconspiracy.org>.
