@@ -16,10 +16,16 @@ Install prerequisites.
 	pelican content -s pelicanconf.py
 	```
 
-	and serve the documentation (the `--autoreload` flag tells it to rebuild any changes you make as it's running):
+	and serve the documentation:
 
 	```bash
-	pelican --autoreload --listen
+	pelican --listen
+	```
+
+	Optionally, you can build the documentation every two seconds with:
+
+	```bash
+	watch pelican content -s pelicanconf.py
 	```
 
 ## Deploying changes
