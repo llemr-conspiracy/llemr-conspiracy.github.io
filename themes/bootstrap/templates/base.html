@@ -52,12 +52,11 @@
                 aria-controls="navToggler"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
-                data-bs-target="#navbarToggleBlock"
-                aria-controls="navbarToggleBlock"
-        >
-        <span class="navbar-toggler-icon"></span>
+                data-bs-target="#navToggleLeft,#navToggleRight"
+                aria-controls="navToggleLeft"
+        ><span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarToggleBlock">
+        <div class="collapse navbar-collapse" id="navToggleLeft">
           <a class="navbar-brand" >{{ SITENAME }}</a>
           <ul class="navbar-nav mr-auto">
             {% for title, link in MENUITEMS.left %}
@@ -70,7 +69,7 @@
             {% endif %}
           </ul>
         </div>
-        <div class="collapse navbar-collapse justify-content-end">
+        <div class="collapse navbar-collapse justify-content-end" id="navToggleRight">
           <ul class="navbar-nav mr-auto">
             {% for title, link in MENUITEMS.right %}
               <li class="nav-item"><a class="nav-link" href="{{ link }}">{{ title }}</a></li>

@@ -29,7 +29,7 @@ MENUITEMS = {
     'right' : [
         ('Demo', DEMO_URL),
         ('Docs', DOCS_URL),
-        ('Source', GITHUB_PROJECT_URL),
+        ('Src', GITHUB_PROJECT_URL),
     ]
 }
 
